@@ -111,12 +111,12 @@ a {
 
 header a:hover,
 header .btn-link:hover {
-    text-decoration: underline!important;
-    color: currentColor!important;
+    text-decoration: underline !important;
+    color: currentColor !important;
 }
 
 nav a:hover {
-    color: white!important;
+    color: white !important;
 }
 
 nav {
@@ -145,6 +145,12 @@ nav a {
     height: 2.625rem;
     font-size: 0.875rem;
     font-weight: 600;
+}
+
+.sign-up-btn:hover {
+    background: none;
+    color: white;
+    text-decoration: underline!important;
 }
 
 header h3 {
@@ -226,15 +232,23 @@ header p {
 form i {
     -webkit-text-stroke: 0.1rem
 }
+
 .form-control.custom-form-control {
     height: 60px;
 }
+
 .filter-bar button {
     font-size: 0.875rem;
 }
 
 .filter-bar a {
     font-size: 1rem;
+}
+
+header .show-flights:hover {
+
+    border: 1px solid #112211;
+    background-color: #F5F5F5;
 }
 
 /* ---------- Plan your trip Section Styling----------- */
@@ -407,9 +421,11 @@ form i {
     font-size: 0.75rem;
 
 }
+
 .remove-padding {
     padding: 0;
 }
+
 .reviews .reviews-blue-background {
     height: 96%;
     width: 94%;
@@ -525,10 +541,10 @@ footer .footer-links ul a {
 }
 
 footer .footer-links ul a:hover {
-    opacity: 1!important;
-    font-size: 1rem!important;
-    color: inherit!important;
-    text-decoration: underline!important;
+    opacity: 1 !important;
+    font-size: 1rem !important;
+    color: inherit !important;
+    text-decoration: underline !important;
 }
 
 .social-media img:hover {
@@ -567,7 +583,7 @@ footer .footer-links ul a:hover {
     }
 
     footer {
-        
+
         background-color: #F5F5F5;
     }
 
@@ -607,11 +623,13 @@ footer .footer-links ul a:hover {
     header ul {
         margin-top: 20px;
     }
+
     .banner-text {
-        margin-top: 1rem!important;
+        margin-top: 1rem !important;
     }
+
     .banner-text h1 {
         line-height: 5rem;
     }
-    
+
 }
