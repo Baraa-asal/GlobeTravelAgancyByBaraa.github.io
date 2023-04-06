@@ -245,8 +245,7 @@ form i {
     font-size: 1rem;
 }
 
-header .show-flights:hover {
-
+header .show-flights:hover{
     border: 1px solid #112211;
     background-color: #F5F5F5;
 }
