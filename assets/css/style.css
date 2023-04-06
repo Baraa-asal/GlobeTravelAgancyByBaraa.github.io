@@ -1,0 +1,617 @@
+/* -----------------------Some Settings----------------------- */
+*,
+ul {
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+}
+
+img {
+    border: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: url('../fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    /* Add additional font formats here, if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    /* Add additional font formats here, if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    /* Add additional font formats here, if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic';
+    src: url('../fonts/TradeGothic/TradeGothicLTStdExtended.otf') format('truetype');
+    /* Add additional font formats here, if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg-light-green {
+    background: #8DD3BB;
+}
+
+.text-blackish-green {
+    color: #112211;
+}
+
+.montserrat-semi-bold {
+    font-family: 'MontserratSemiBold';
+}
+
+.montserrat-regular {
+    font-family: 'MontserratRegular';
+}
+
+.montserrat-medium {
+    font-family: 'MontserratMedium';
+}
+
+.gothic {
+    font-family: 'Trade Gothic';
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ---------- Header Section Styling----------- */
+
+.banner-div {
+    position: relative;
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+    height: 36.313rem;
+}
+
+.banner-div::before {
+    /* I used ::before pseudo-element to create a gradient overlay on top of the image.*/
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+header a:hover,
+header .btn-link:hover {
+    text-decoration: underline!important;
+    color: currentColor!important;
+}
+
+nav a:hover {
+    color: white!important;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    font-size: 0.76rem;
+    line-height: 1.063rem;
+    font-style: normal;
+}
+
+.right-nav ul {
+    width: 11.063rem;
+}
+
+.left-nav ul {
+    width: 15.125rem;
+}
+
+.sign-up-btn {
+    background: #FFFFFF;
+    border-radius: 0.5rem;
+    width: 6.5rem;
+    height: 2.625rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+header h3 {
+    font-size: 2.813rem;
+    line-height: 3.553rem;
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: 5rem;
+    line-height: 6.313rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.filter-bar {
+    border-radius: 0.938rem;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 80%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+    border-radius: 1rem;
+}
+
+.filter-bar a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.filter-bar .right-border {
+    border-right: 1px grey solid;
+    margin-right: 0.6rem;
+}
+
+.filter-bar .input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: relative;
+    line-height: 6ex;
+}
+
+.input-icon {
+    top: 1rem;
+    position: absolute;
+    right: 2rem;
+    background: white;
+    border: none;
+    width: 1.7rem;
+}
+
+.chevlon-down {
+    top: 1.6rem;
+    width: 1.24rem;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: -1.5ex;
+    z-index: 1;
+    left: 2em;
+    background-color: white;
+    padding: 0 0.313rem;
+}
+
+form i {
+    -webkit-text-stroke: 0.1rem
+}
+.form-control.custom-form-control {
+    height: 60px;
+}
+.filter-bar button {
+    font-size: 0.875rem;
+}
+
+.filter-bar a {
+    font-size: 1rem;
+}
+
+/* ---------- Plan your trip Section Styling----------- */
+
+.plan-your-trip {
+    margin-top: 18%;
+}
+
+.plan-your-trip h3 {
+    font-size: 2rem;
+    color: black;
+    line-height: 2.438rem;
+}
+
+.plan-your-trip small {
+    font-size: 1rem;
+}
+
+.plan-your-trip button,
+.reviews button {
+    outline: 1px solid #8DD3BB;
+
+}
+
+.plan-your-trip button:hover,
+.reviews button:hover {
+    background-color: #112211;
+    color: #8DD3BB;
+    border: none;
+}
+
+.plan-your-trip .trip-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0.25rem 1rem rgba(17, 34, 17, 0.05);
+}
+
+.plan-your-trip .trip-card:hover {
+    box-shadow: 0px 0.25rem 1rem rgba(17, 34, 17, 0.05);
+    transform: translate(0px, -8px);
+    transition: transform 360ms ease-in-out;
+}
+
+.plan-your-trip h5 {
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 0.7;
+    line-height: 1.25rem;
+}
+
+.plan-your-trip h6 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+}
+
+.bg-flights {
+    background-image: url(../images/flights.png);
+    height: 34.938rem;
+    margin-right: 5%;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.bg-hotels {
+    background-image: url(../images/hotels.png);
+    height: 34.938rem;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.overlay::before,
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(18, 18, 18, 0.75) 48.67%);
+    border-radius: 1.25rem;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+}
+
+.details {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 7.125rem;
+    right: 6.313rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.details h1 {
+    font-size: 2.5rem;
+    line-height: 3.188rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.details p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* ---------- Reviews Section Styling ----------- */
+.reviews .review-card {
+    border-radius: 1.25rem;
+    box-shadow: 0.125rem 0.25rem 1rem rgba(17, 34, 17, 0.1);
+}
+
+.reviews .row3-view-more p {
+    cursor: pointer;
+}
+
+.reviews .row2-info small {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reviews small {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.067m;
+    opacity: 0.5;
+}
+
+.reviews .star,
+.row6-google img {
+    height: 1.313rem;
+}
+
+.reviews .padding-reviews {
+    padding-left: 1rem;
+
+}
+
+.reviews .review-headline {
+    font-size: 1.1rem;
+    line-height: 1.894rem;
+    font-weight: 700;
+}
+
+.reviews .row3-view-more p,
+.reviews .row5-person-details .review-name {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
+
+.reviews .row5-person-details .reviews-name-details {
+    font-weight: 500;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    line-height: 0.938rem;
+}
+
+.reviews .row6-google small {
+    font-weight: 700;
+    line-height: 0.938rem;
+    opacity: 0.4;
+    font-size: 0.75rem;
+
+}
+.remove-padding {
+    padding: 0;
+}
+.reviews .reviews-blue-background {
+    height: 96%;
+    width: 94%;
+    border-radius: 1.25rem;
+    background: rgba(141, 211, 187, 0.4);
+    position: absolute;
+    left: 2.4rem;
+    top: 2rem;
+    z-index: -1;
+}
+
+.reviews .review-to-front {
+    z-index: 1;
+}
+
+.m-2Custom {
+    margin: 0.5rem;
+    width: 97%;
+
+
+}
+
+/* ---------- Footer Styling ----------- */
+
+footer {
+    position: relative;
+    margin-top: 14%;
+    padding-top: 12rem;
+    background-color: #8DD3BB;
+}
+
+
+
+.subscribe-footer {
+    background-color: #CDEAE1;
+    width: 80%;
+    border-radius: 1.25rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -34%;
+}
+
+.subscribe-footer img {
+    width: 105%;
+
+}
+
+.subscribe-footer button {
+    background-color: #112211;
+    color: white;
+    font-size: 0.875rem;
+    height: 3.5rem;
+    margin-left: 1.2rem;
+
+}
+
+.subscribe-footer button:hover {
+    color: black;
+    background-color: #8DD3BB;
+
+}
+
+.subscribe-footer input[type="text"] {
+    width: 65%;
+    margin-right: 0;
+    border: none;
+    height: 3.5rem;
+}
+
+.subscribe-footer h3 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+}
+
+.subscribe-footer p {
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.subscribe-footer .sentence {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+footer .footer-links .logo {
+    width: 7.5rem;
+}
+
+footer .footer-links .social-media {
+    width: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-links h6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+footer .footer-links ul a {
+    opacity: 0.7;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    font-weight: 500;
+}
+
+footer .footer-links ul a:hover {
+    opacity: 1!important;
+    font-size: 1rem!important;
+    color: inherit!important;
+    text-decoration: underline!important;
+}
+
+.social-media img:hover {
+    transform: translate(0px, -8px);
+    transition: transform 600ms ease-in-out;
+    cursor: pointer;
+}
+
+/* ----------------- Media Quieries ------------------ */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.3rem !important;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+
+    }
+
+    h1,
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .filter-bar {
+        width: 100%;
+        position: relative;
+        margin-top: 1.2rem;
+    }
+
+    .subscribe-footer {
+        position: relative;
+        width: 100%;
+    }
+
+    footer {
+        
+        background-color: #F5F5F5;
+    }
+
+    footer .footer-links {
+        background-color: #8DD3BB;
+        margin-top: 4%;
+        border-radius: 1.5rem 1.25rem 0 0;
+    }
+
+    .bg-flights {
+        margin-bottom: 1.2rem;
+    }
+
+    .reviews .reviews-blue-background {
+        display: none;
+    }
+
+    .m-2Custom {
+        margin: 0rem !important;
+
+    }
+
+    .navbar-dark .navbar-toggler {
+        border-color: rgb(255 255 255);
+        border: 2px white solid;
+    }
+
+    header .bed-icon,
+    header .airplane-icon {
+        display: none;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header ul {
+        margin-top: 20px;
+    }
+    .banner-text {
+        margin-top: 1rem!important;
+    }
+    .banner-text h1 {
+        line-height: 5rem;
+    }
+    
+}
